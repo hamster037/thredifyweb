@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thredify | Curated Sustainable Fashion & Minimalist Apparel</title>
+    <meta name="description" content="Explore Thredify, a contemporary sustainable fashion house offering minimalist, thoughtfully crafted garments designed for longevity. Browse our capsule collection today.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SHARED HEADER -->
+    <header id="mainHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="headerLogo">
+                Thredify<span>.</span>
+            </a>
+            
+            <nav class="nav-desktop" aria-label="Desktop Navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggleBtn" aria-label="Toggle Mobile Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="nav-mobile-overlay" id="mobileMenuOverlay">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <!-- HERO SECTION WITH CAROUSEL -->
+        <section class="hero-fullwidth" id="homeHero">
+            <div class="hero-carousel">
+                <div class="carousel-slide active">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1600" alt="Minimalist light cream styling editorial shot">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600" alt="Conscious garments on wooden clothing hangers">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1600" alt="Autumn collection editorial portrait">
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-container-alt">
+                <div class="hero-content-alt animate-fade-in">
+                    <span class="hero-tagline" style="color: var(--accent); letter-spacing: 0.15em; font-weight: 600; text-transform: uppercase;">Thredify Capsule Vol. I</span>
+                    <h1>Conscious Tailoring.<br>Sourced Ethically.</h1>
+                    <p>Elevating daily garments with pure organic fibers, clean profiles, and premium artisanal finishes designed for permanent style.</p>
+                    <div class="hero-actions">
+                        <a href="products.html" class="btn btn-primary" id="heroShopBtn"><span>Shop Now</span></a>
+                        <a href="about.html" class="btn btn-secondary" id="heroLearnBtn">Explore Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRESS / TESTIMONIALS STRIP -->
+        <section class="press-strip reveal-on-scroll" id="pressMentions">
+            <div class="container press-container">
+                <div class="press-item">
+                    <p class="press-quote">"The clean future of modular wardrobe styling."</p>
+                    <span class="press-source">Vogue</span>
+                </div>
+                <div class="press-item">
+                    <p class="press-quote">"Unmatched luxury materials and exquisite minimalist cuts."</p>
+                    <span class="press-source">GQ Journal</span>
+                </div>
+                <div class="press-item">
+                    <p class="press-quote">"Leading a quiet, carbon-neutral revolution in slow fashion."</p>
+                    <span class="press-source">Monocle</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRAND STORY TEASER SECTION -->
+        <section class="section reveal-on-scroll" id="philosophyIntro">
+            <div class="container teaser-grid">
+                <div class="teaser-img">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1000" alt="Artisanal tailor design studio and organic fabric boards">
+                </div>
+                <div class="teaser-content">
+                    <span class="hero-tagline">Our Standard</span>
+                    <h2>Intentionally Crafted.</h2>
+                    <p>At Thredify, we reject the endless cycle of micro-trends. Instead, we advocate for clean lines, luxury fibers, and ethical manufacturing practices that honor both the makers and the environment.</p>
+                    <p style="margin-bottom: 2.5rem;">Every pattern is created in our small-batch design studio, focusing on modular versatility so you can build a long-lasting wardrobe that speaks volumes with simplicity.</p>
+                    <a href="about.html" class="btn btn-primary" id="philosophyLearnMore"><span>Learn More</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PRODUCTS SECTION (4-6 CARDS) -->
+        <section class="section reveal-on-scroll" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" id="featuredProducts">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Items</h2>
+                    <p class="section-subtitle">Curated essentials for the modular wardrobe.</p>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" onclick="location.href='products.html'">
+                        <div class="product-badge">New</div>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800" alt="Cream Boucle Knitwear front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800" alt="Cream Boucle Knitwear styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Cream Boucle Knitwear to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Oversized Bouclé Knitwear</h3>
+                                <span class="product-category">Knitwear</span>
+                            </div>
+                            <span class="product-price">$185</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" onclick="location.href='products.html'">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800" alt="Trench Coat front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800" alt="Trench Coat styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add The Tailored Trench Coat to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">The Tailored Trench Coat</h3>
+                                <span class="product-category">Outerwear</span>
+                            </div>
+                            <span class="product-price">$320</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" onclick="location.href='products.html'">
+                        <div class="product-badge">Hot</div>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1548624313-0396c75e4b1a?q=80&w=800" alt="Tailored Blazer front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=800" alt="Tailored Blazer styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Structured Tailored Blazer to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Structured Tailored Blazer</h3>
+                                <span class="product-category">Outerwear</span>
+                            </div>
+                            <span class="product-price">$260</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" onclick="location.href='products.html'">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?q=80&w=800" alt="Wide Leg Trousers front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800" alt="Wide Leg Trousers styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Linen Wide-Leg Trousers to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Linen Wide-Leg Trousers</h3>
+                                <span class="product-category">Essentials</span>
+                            </div>
+                            <span class="product-price">$150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMINENT DEDICATED NEWSLETTER SIGNUP SECTION -->
+        <section class="section newsletter-section reveal-on-scroll" id="newsletterSignup">
+            <div class="container">
+                <div class="newsletter-box">
+                    <span class="hero-tagline" style="color: var(--accent);">Stay Updated</span>
+                    <h2>Join the Registry</h2>
+                    <p>Sign up to receive early notifications on exclusive capsule drops, seasonal lookbooks, and private studio events.</p>
+                    <form class="newsletter-section-form" id="newsletterHomeForm" aria-label="Homepage Newsletter Signup">
+                        <div class="input-group">
+                            <input type="email" placeholder="Your Email Address" aria-label="Email Address" required>
+                            <button type="submit" aria-label="Subscribe">→</button>
+                        </div>
+                    </form>
+                    <div class="newsletter-feedback" id="newsletterHomeFeedback" style="margin-top: 1rem;"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer id="mainFooter">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" id="footerLogo">
+                        Thredify<span>.</span>
+                    </a>
+                    <p>Elevating everyday essentials through conscious craftsmanship.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="products.html">Outerwear</a></li>
+                        <li><a href="products.html">Knitwear</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Our Philosophy</a></li>
+                        <li><a href="about.html#sustainability">Sustainability</a></li>
+                        <li><a href="contact.html">Store Locator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <div class="newsletter-form-wrapper">
+                        <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter Signup">
+                            <p>Join our list for exclusive capsule drops and seasonal journals.</p>
+                            <div class="input-group">
+                                <input type="email" placeholder="Your Email Address" aria-label="Email Address" required>
+                                <button type="submit" aria-label="Subscribe">→</button>
+                            </div>
+                        </form>
+                        <div class="newsletter-feedback" id="newsletterFeedback"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Thredify. All rights reserved.</p>
+                <div class="social-links" id="socialLinks">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">Instagram</a>
+                    <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Pinterest">Pinterest</a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

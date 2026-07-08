@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Capsule Collections | Thredify Premium Wardrobe</title>
+    <meta name="description" content="Browse the Thredify catalog. Choose from structured wool coats, hand-knit bouclé knitwear, and organic daily essentials built to complement any outfit.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SHARED HEADER -->
+    <header id="mainHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="headerLogo">
+                Thredify<span>.</span>
+            </a>
+            
+            <nav class="nav-desktop" aria-label="Desktop Navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggleBtn" aria-label="Toggle Mobile Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="nav-mobile-overlay" id="mobileMenuOverlay">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <!-- PRODUCTS HERO -->
+        <section class="products-hero animate-fade-in" style="padding-bottom: 2rem;">
+            <div class="container">
+                <span class="hero-tagline">Catalog</span>
+                <h1>Crafted Wardrobe Essentials</h1>
+                <p class="hero-desc">Designed with versatility in mind. Filter by category, price, size, or color to refine your uniform.</p>
+            </div>
+        </section>
+
+        <!-- SHOP CATALOG SECTION -->
+        <section class="section" style="padding-top: 2rem;" id="catalogSection">
+            <div class="container">
+                
+                <!-- Filters Top Bar Block -->
+                <div class="shop-filters-container reveal-on-scroll">
+                    <div class="filters-row">
+                        <!-- Category Filter -->
+                        <div class="filter-group">
+                            <label for="filter-category">Category</label>
+                            <select class="filter-select" id="filter-category">
+                                <option value="all">All Categories</option>
+                                <option value="knitwear">Knitwear</option>
+                                <option value="outerwear">Outerwear</option>
+                                <option value="essentials">Essentials</option>
+                            </select>
+                        </div>
+
+                        <!-- Price Filter -->
+                        <div class="filter-group">
+                            <label for="filter-price">Price</label>
+                            <select class="filter-select" id="filter-price">
+                                <option value="all">All Prices</option>
+                                <option value="under-150">Under $150</option>
+                                <option value="150-250">$150 - $250</option>
+                                <option value="over-250">Over $250</option>
+                            </select>
+                        </div>
+
+                        <!-- Size Filter -->
+                        <div class="filter-group">
+                            <label for="filter-size">Size</label>
+                            <select class="filter-select" id="filter-size">
+                                <option value="all">All Sizes</option>
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">X-Large</option>
+                            </select>
+                        </div>
+
+                        <!-- Color Filter -->
+                        <div class="filter-group">
+                            <label for="filter-color">Color</label>
+                            <select class="filter-select" id="filter-color">
+                                <option value="all">All Colors</option>
+                                <option value="cream">Cream</option>
+                                <option value="charcoal">Charcoal</option>
+                                <option value="beige">Beige</option>
+                                <option value="sage">Sage</option>
+                                <option value="navy">Navy</option>
+                            </select>
+                        </div>
+
+                        <!-- Sorting -->
+                        <div class="filter-group" style="margin-left: auto;">
+                            <label for="sort-products">Sort By</label>
+                            <select class="filter-select" id="sort-products">
+                                <option value="default">Default (A-Z)</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="product-grid" id="productGridList">
+                    
+                    <!-- Product 1: Knitwear -->
+                    <div class="product-card reveal-on-scroll" 
+                         data-category="knitwear" 
+                         data-price="185" 
+                         data-sizes="s,m,l" 
+                         data-colors="cream,charcoal"
+                         data-description="Comfortable heavyweight knit sweater crafted from premium organic alpaca bouclé yarn. Relaxed silhouette, drop shoulder details, and structural ribbed knit trims.">
+                        <div class="product-badge">New</div>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=800" alt="Cream Boucle Knitwear front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800" alt="Cream Boucle Knitwear styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Cream Boucle Knitwear to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Oversized Bouclé Knitwear</h3>
+                                <span class="product-category">Knitwear</span>
+                            </div>
+                            <span class="product-price">$185</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Outerwear -->
+                    <div class="product-card reveal-on-scroll" 
+                         data-category="outerwear" 
+                         data-price="320" 
+                         data-sizes="m,l,xl" 
+                         data-colors="beige,charcoal"
+                         data-description="Minimalist, double-breasted trench coat tailored in durable cotton twill. Features storm flaps, a belt closure, and deep inset side pockets.">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800" alt="Trench Coat front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800" alt="Trench Coat styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add The Tailored Trench Coat to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">The Tailored Trench Coat</h3>
+                                <span class="product-category">Outerwear</span>
+                            </div>
+                            <span class="product-price">$320</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Outerwear -->
+                    <div class="product-card reveal-on-scroll" 
+                         data-category="outerwear" 
+                         data-price="260" 
+                         data-sizes="s,m,l" 
+                         data-colors="charcoal,beige"
+                         data-description="Structured single-button blazer in woven wool-linen fabric. Fully lined. Padded shoulders, peak lapels, and double back vents.">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1548624313-0396c75e4b1a?q=80&w=800" alt="Tailored Blazer front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=800" alt="Tailored Blazer styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Structured Tailored Blazer to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Structured Tailored Blazer</h3>
+                                <span class="product-category">Outerwear</span>
+                            </div>
+                            <span class="product-price">$260</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: Essentials -->
+                    <div class="product-card reveal-on-scroll" 
+                         data-category="essentials" 
+                         data-price="150" 
+                         data-sizes="s,m,l,xl" 
+                         data-colors="cream,sage"
+                         data-description="Wide-leg trousers cut in lightweight organic linen. Designed with a flexible elastic waistband, zip fly, and back patch pockets.">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?q=80&w=800" alt="Wide Leg Trousers front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800" alt="Wide Leg Trousers styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Linen Wide-Leg Trousers to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Linen Wide-Leg Trousers</h3>
+                                <span class="product-category">Essentials</span>
+                            </div>
+                            <span class="product-price">$150</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: Essentials -->
+                    <div class="product-card reveal-on-scroll" 
+                         data-category="essentials" 
+                         data-price="110" 
+                         data-sizes="s,m,l" 
+                         data-colors="cream,sage,charcoal"
+                         data-description="Classic casual button-up shirt in breathable plain-weave linen. Features single-needle sewing, flat-felled armholes, and corozo buttons.">
+                        <div class="product-badge">Restock</div>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?q=80&w=800" alt="Linen Button-up front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800" alt="Linen Button-up layout" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Conscious Linen Button-Up to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Conscious Linen Button-Up</h3>
+                                <span class="product-category">Essentials</span>
+                            </div>
+                            <span class="product-price">$110</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 6: Knitwear -->
+                    <div class="product-card reveal-on-scroll" 
+                         data-category="knitwear" 
+                         data-price="135" 
+                         data-sizes="s,m,l,xl" 
+                         data-colors="sage,charcoal"
+                         data-description="Cozy cotton sweater knitted in a heavy rib gauge. Features a classic crew neck collar, dropped shoulders, and ribbed cuffs.">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=800" alt="Ribbed Crewneck front" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800" alt="Ribbed Crewneck styling" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Heavyweight Cotton Crewneck to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Heavyweight Cotton Crewneck</h3>
+                                <span class="product-category">Knitwear</span>
+                            </div>
+                            <span class="product-price">$135</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 7: Outerwear (Initially hidden by load more class) -->
+                    <div class="product-card reveal-on-scroll paged-hidden" 
+                         data-category="outerwear" 
+                         data-price="380" 
+                         data-sizes="m,l" 
+                         data-colors="charcoal,navy"
+                         data-description="Tailored structured overcoat built from thick, organic wool and recycled cashmere. Concealed button placket, silk interior lining.">
+                        <div class="product-badge">Exclusive</div>
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800" alt="Structured Wool Coat" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800" alt="Structured Wool Coat layout" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Minimalist Wool Coat to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Minimalist Wool Coat</h3>
+                                <span class="product-category">Outerwear</span>
+                            </div>
+                            <span class="product-price">$380</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 8: Essentials (Initially hidden by load more class) -->
+                    <div class="product-card reveal-on-scroll paged-hidden" 
+                         data-category="essentials" 
+                         data-price="95" 
+                         data-sizes="s,m,l" 
+                         data-colors="sage,cream"
+                         data-description="Relaxed fit utility shorts in heavy structured linen. Front single pleats, adjustable buckle side tabs, and horn buttons.">
+                        <div class="product-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?q=80&w=800" alt="Artisanal Linen Shorts" class="product-img-main">
+                            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800" alt="Artisanal Linen Shorts layout" class="product-img-hover">
+                            <button class="add-to-cart-quick" aria-label="Quick Add Artisanal Linen Shorts to Cart">Add to Cart</button>
+                        </div>
+                        <div class="product-info">
+                            <div>
+                                <h3 class="product-title">Artisanal Linen Shorts</h3>
+                                <span class="product-category">Essentials</span>
+                            </div>
+                            <span class="product-price">$95</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Load More / Pagination Block -->
+                <div class="load-more-container reveal-on-scroll">
+                    <button class="btn btn-secondary" id="loadMoreBtn">Load More</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRODUCT DETAIL MODAL (PORTAL) -->
+        <div class="modal-overlay" id="productDetailModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+            <div class="modal-body">
+                <button class="modal-close" id="modalCloseBtn" aria-label="Close Product Details">&times;</button>
+                
+                <div class="modal-grid">
+                    <!-- Left Column: Image -->
+                    <div class="modal-img-col">
+                        <img src="" alt="" id="modalProductImg">
+                    </div>
+                    
+                    <!-- Right Column: Detail details -->
+                    <div class="modal-details-col">
+                        <span class="modal-tag" id="modalProductTag">Category</span>
+                        <h2 class="modal-title" id="modalProductTitle">Product Title</h2>
+                        <span class="modal-price" id="modalProductPrice">$0.00</span>
+                        
+                        <p class="modal-desc" id="modalProductDesc">
+                            Detailed garment description...
+                        </p>
+
+                        <!-- Swatch selector -->
+                        <div class="modal-option-title">Select Color</div>
+                        <div class="swatch-group" id="modalSwatches">
+                            <!-- Injected dynamically -->
+                        </div>
+
+                        <!-- Size selector -->
+                        <div class="modal-option-title">Select Size</div>
+                        <div class="size-selector-group" id="modalSizes">
+                            <!-- Injected dynamically -->
+                        </div>
+
+                        <button class="btn btn-primary" id="modalAddToCartBtn" style="width: 100%;">
+                            <span>Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer id="mainFooter">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" id="footerLogo">
+                        Thredify<span>.</span>
+                    </a>
+                    <p>Elevating everyday essentials through conscious craftsmanship.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="products.html">Outerwear</a></li>
+                        <li><a href="products.html">Knitwear</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Our Philosophy</a></li>
+                        <li><a href="about.html#sustainability">Sustainability</a></li>
+                        <li><a href="contact.html">Store Locator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <div class="newsletter-form-wrapper">
+                        <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter Signup">
+                            <p>Join our list for exclusive capsule drops and seasonal journals.</p>
+                            <div class="input-group">
+                                <input type="email" placeholder="Your Email Address" aria-label="Email Address" required>
+                                <button type="submit" aria-label="Subscribe">→</button>
+                            </div>
+                        </form>
+                        <div class="newsletter-feedback" id="newsletterFeedback"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Thredify. All rights reserved.</p>
+                <div class="social-links" id="socialLinks">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">Instagram</a>
+                    <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Pinterest">Pinterest</a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

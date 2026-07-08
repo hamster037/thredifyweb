@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Thredify | Find Our Showrooms & Connect</title>
+    <meta name="description" content="Reach out to Thredify. Visit our carbon-neutral design showrooms, contact our support team, or read our answers to frequently asked questions.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SHARED HEADER -->
+    <header id="mainHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="headerLogo">
+                Thredify<span>.</span>
+            </a>
+            
+            <nav class="nav-desktop" aria-label="Desktop Navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggleBtn" aria-label="Toggle Mobile Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="nav-mobile-overlay" id="mobileMenuOverlay">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        
+        <!-- CONTACT SECTION -->
+        <section class="section contact-hero animate-fade-in" style="padding-bottom: 2rem;">
+            <div class="container contact-grid">
+                <!-- Info Column -->
+                <div class="contact-info-col">
+                    <span class="hero-tagline">Connect</span>
+                    <h2>We'd love to hear from you.</h2>
+                    <p>Whether you're inquiring about our fabrics, custom studio fitting services, or a recent order, our team is here to assist with tailored care.</p>
+                    
+                    <div class="contact-details">
+                        <!-- Showroom address -->
+                        <div class="contact-detail-item">
+                            <h4>Design House & Showroom</h4>
+                            <p>84 Minimalist Way, Suite 100<br>Portland, Oregon 97209</p>
+                        </div>
+                        
+                        <!-- Contact points -->
+                        <div class="contact-detail-item">
+                            <h4>Direct Inquiry</h4>
+                            <p><a href="mailto:hello@thredify.com">hello@thredify.com</a></p>
+                            <p><a href="tel:+15035550192">+1 (503) 555-0192</a></p>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="contact-detail-item">
+                            <h4>Showroom Hours</h4>
+                            <p>Tuesday — Saturday: 10:00 AM — 6:00 PM<br>Sunday & Monday: Closed</p>
+                        </div>
+
+                        <!-- Social Media Outlets -->
+                        <div class="contact-detail-item">
+                            <h4>Follow Our Journal</h4>
+                            <div class="social-links" id="contactSocials" style="margin-top: 0.5rem;">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-col">
+                    <form id="contactForm" aria-label="Contact Form">
+                        <!-- Name -->
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required autocomplete="name">
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required autocomplete="email">
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <!-- Message -->
+                        <div class="form-group">
+                            <textarea id="message" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <div class="form-feedback" id="contactFormFeedback"></div>
+
+                        <button type="submit" class="btn btn-primary" id="contactSubmitBtn" style="width: 100%;">
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- STYLIZED MAP EMBED SECTION -->
+        <section class="section reveal-on-scroll" style="padding-top: 0; padding-bottom: 4rem;" id="mapSection">
+            <div class="container">
+                <div class="map-container" style="height: 400px; width: 100%; border: 1px solid var(--border-color); overflow: hidden; filter: grayscale(1) invert(0.9) contrast(1.2);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.5908587127116!2d-122.68412852341498!3d45.528434771075035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a0211ff1f8b%3A0x7d01306354fa409e!2sPearl%20District%2C%20Portland%2C%20OR!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs SECTION -->
+        <section class="section reveal-on-scroll" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" id="faqSection">
+            <div class="container">
+                <div class="faq-header">
+                    <span class="hero-tagline">Answers</span>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-list">
+                    <!-- FAQ 1: Sizing -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" id="faqBtn1">
+                            How do I choose the correct size?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most Thredify garments are designed with a contemporary, relaxed fit. We recommend ordering your normal size for the intended drape. You can view our detailed chest, waist, and sleeve dimensions directly in the options guide of our product detail modals.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2: Care -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" id="faqBtn2">
+                            How do I care for my Thredify garments?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Because we use organic, luxury fibers with zero harsh chemical coatings, we recommend hand washing or machine washing cold on a gentle cycle. Always lay flat to dry to maintain the shape and longevity of the fibers.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3: Shipping -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" id="faqBtn3">
+                            Do you offer global shipping?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. We ship worldwide using carbon-neutral freight carriers. Shipping fees and custom clearance fees are calculated directly at checkout based on your delivery country.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4: Returns -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" id="faqBtn4">
+                            What is your return policy?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We accept returns of unworn, unwashed garments with original tags intact within 30 days of purchase. Simply print a prepaid shipping label via our online returns portal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer id="mainFooter">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" id="footerLogo">
+                        Thredify<span>.</span>
+                    </a>
+                    <p>Elevating everyday essentials through conscious craftsmanship.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="products.html">Outerwear</a></li>
+                        <li><a href="products.html">Knitwear</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Our Philosophy</a></li>
+                        <li><a href="about.html#sustainability">Sustainability</a></li>
+                        <li><a href="contact.html">Store Locator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <div class="newsletter-form-wrapper">
+                        <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter Signup">
+                            <p>Join our list for exclusive capsule drops and seasonal journals.</p>
+                            <div class="input-group">
+                                <input type="email" placeholder="Your Email Address" aria-label="Email Address" required>
+                                <button type="submit" aria-label="Subscribe">→</button>
+                            </div>
+                        </form>
+                        <div class="newsletter-feedback" id="newsletterFeedback"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Thredify. All rights reserved.</p>
+                <div class="social-links" id="socialLinks">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">Instagram</a>
+                    <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Pinterest">Pinterest</a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
